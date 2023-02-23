@@ -61,7 +61,7 @@ const [loading, setLoading] = useState(false);
       if (form.prompt && form.photo) {
         setLoading(true);
         try {
-          const response = await fetch('https://mp2-ai.onrender.com', { //http://localhost:8080/api/v1/post
+          const response = await fetch('https://mp2-ai.onrender.com', { 
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
